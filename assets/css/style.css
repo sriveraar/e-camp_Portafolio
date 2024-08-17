@@ -1,0 +1,115 @@
+:root {
+    --color-texto: #e0e0e0;
+    --color-texto-oscuro: #000000;
+    --color-fondo: #000000;
+    --color-icono: #00ffff;
+    --color-header: #02023a;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding-top: 5px;
+    z-index: 100;
+    background-color: var(--color-header);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 14px !important;
+    background-color: var(--color-fondo) !important;
+    color: var(--color-texto) !important;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+}
+
+label {
+    color: var(--color-texto-oscuro);
+}
+
+
+.wrapped{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px !important;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: var(--color-texto);
+    color: var(--color-texto-oscuro);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.panel_izquierdo {
+    position: fixed;
+    top: 70px;
+    left: 5px;
+}
+
+.panel_derecho {
+    margin-left: 25% !important;
+}
+
+.ico {
+    color: var(--color-icono);
+}
+
+.link_rrss{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+.form-control {
+    border: 1px solid gray !important;
+}
+
+.mensaje {
+    height: 200px !important;
+}
+
+.content{
+    flex: 1;
+    padding-top: 60px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0px;
+    font-weight: bold;
+    background-color: var(--color-header);
+}
